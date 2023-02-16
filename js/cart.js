@@ -53,7 +53,7 @@ Object.keys(VeeValidateRules).forEach(rule => {
   if (rule !== 'default') {
     VeeValidate.defineRule(rule, VeeValidateRules[rule]);
   }
-  VeeValidateI18n.loadLocaleFromURL("../zh_TW.json");
+  VeeValidateI18n.loadLocaleFromURL("./zh_TW.json");
 });
 
 // Activate the locale
