@@ -185,6 +185,10 @@ const app=createApp({
            alert('訂單已送出');
          })
       }
+     },
+     validateTelephone(value){
+      const phoneNumber = /^(09)[0-9]{8}$/;
+      return phoneNumber.test(value) ? true : '請輸入09開頭的手機號碼';
      }
 
   },
